@@ -1,4 +1,4 @@
-# rofi-ykman
+# wofi-ykman
 
 YubiKey OATH integration for Rofi
 
@@ -16,7 +16,7 @@ YubiKey OATH integration for Rofi
 ## Usage
 
 ```
-Usage: rofi-ykman [command]
+Usage: wofi-ykman [command]
 
 Commands:
   clipboard   Copy the code to the clipboard (default).
@@ -32,10 +32,10 @@ When selecting an an entry, the code will by copied to the clipboard or typed, d
 
 ### Usage in [i3](https://i3wm.org/) or [Sway](https://swaywm.org/)
 
-Assuming you have copied this script to `~/.config/rofi/rofi-ykman`, add this to your i3 or Sway config:
+Assuming you have copied this script to `~/.config/wofi/wofi-ykman`, add this to your i3 or Sway config:
 
 ```
-bindsym --release $mod+o exec --no-startup-id "~/.config/rofi/rofi-ykman"
+bindsym --release $mod+o exec --no-startup-id "~/.config/wofi/wofi-ykman"
 ```
 
 When you press `$mod+o`, you will see a Rofi prompt listing available TOTP accounts. Choose one and the code will be copied to your clipboard. If you forgot to insert YubiKey, you'll get a notification saying so.
